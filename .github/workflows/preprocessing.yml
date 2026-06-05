@@ -29,4 +29,4 @@ jobs:
     - name: Run Preprocessing
       run: |
         cd preprocessing
-        python automate_Richard-Miguel.py
+        python automate_Richard_Miguel.py
