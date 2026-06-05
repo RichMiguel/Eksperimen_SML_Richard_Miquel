@@ -1,5 +1,6 @@
 import pandas as pd
 from datetime import datetime
+import os
 
 def encode_categorical(df):
     """
@@ -55,6 +56,11 @@ def preprocess_data(df):
     return df
 
 def main():
+    os.makedirs(
+        "housing_price_dataset_preprocessing",
+        exist_ok=True
+    )
+    
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     
     input_file = "../housing_price_dataset.csv"
