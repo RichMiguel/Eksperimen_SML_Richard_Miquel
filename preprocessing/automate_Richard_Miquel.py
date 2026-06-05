@@ -1,5 +1,4 @@
 import pandas as pd
-from datetime import datetime
 import os
 
 def encode_categorical(df):
@@ -61,13 +60,11 @@ def main():
         exist_ok=True
     )
     
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    
     input_file = "../housing_price_dataset.csv"
     
     output_file = (
         f"housing_price_dataset_preprocessing/"
-        f"housing_preprocessed_{timestamp}.csv"
+        f"housing_preprocessed_dataset.csv"
     )
     
     df = pd.read_csv(input_file)
