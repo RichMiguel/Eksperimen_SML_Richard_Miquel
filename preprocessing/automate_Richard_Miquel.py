@@ -61,7 +61,7 @@ def main():
     
     output_file = (
         f"housing_price_dataset_preprocessing/"
-        f"Housing_preprocessed_{timestamp}.csv"
+        f"housing_preprocessed_{timestamp}.csv"
     )
     
     df = pd.read_csv(input_file)
